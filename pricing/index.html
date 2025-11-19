@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inicio - Ejemplo</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .hero {
+            background: url('https://picsum.photos/1200/400') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        }
+        .contenido {
+            padding: 40px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #357ac9;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página de Ejemplo</h1>
+    </header>
+
+    <nav>
+        <a href="../home/index.html">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Acerca</a>
+        <a href="#">pricing</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        Página de pricing Ejemplo
+    </section>
+
+    <section class="contenido">
+        <h2>Sobre esta página</h2>
+        <p>Esta es la sección del pricing.</p>
+        <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    </section>
+
+    <footer>
+        © 2025 - Ejemplo Web
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Hola! Gracias por visitar la página.");
+        }
+    </script>
+</body>
+</html>
